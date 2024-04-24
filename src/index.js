@@ -2,12 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Form from "./form"
+import PdfView from "./pdfview";
+import Preview from './preview';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import App from './Jotform';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ root.render(
   <React.StrictMode>
-    <App />
+  
+    <Router>
+        <Routes> 
+           <Route path="/" element={<App />} />
+           <Route path="/form/build" element={<Form />} />
+           <Route path="/form/pdfview" element={<PdfView />} />
+           <Route path="/preview" element={<Preview />} />
+        </Routes>
+    </Router>
+
   </React.StrictMode>
 );
 

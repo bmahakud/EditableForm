@@ -1,0 +1,852 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+ 
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.headerMiddle {
+  display: flex;
+  align-items: center;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.profileicon {
+  align-items: center;
+  border-left: 2px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Blank {
+  width: 20px;
+}
+
+.pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #0b0b9e;
+}
+
+.Collaborators {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  border: 1px solid lightgray;
+  background-color: white;
+  padding: 3px 5px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.help {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  border: 1px solid lightgrey;
+  background-color: white;
+  padding: 3px 5px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.Collaborators:hover,
+.help:hover {
+  background-color: lavender;
+}
+
+.headerIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.newCustomerForm {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0b0b9e;
+}
+
+.Text {
+  margin-left: 30px;
+  border-left: 1px solid #0b0b9e;
+  padding: 5px;
+}
+
+.blueStripe {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #0b0b9e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invoiceText1,
+.invoiceText2,
+.invoiceText3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 9px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: background-color 0.3s ease;
+  margin-right: 40px;
+  border-style: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.invoiceText1:hover,
+.invoiceText2:hover,
+.invoiceText3:hover {
+  background-color: #5a5ab0;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.companyName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.searchbox,
+.searchbox1,
+.searchdropdown1 {
+  display: flex;
+  align-items: center;
+}
+
+.search-dropdown button {
+  padding: 5px 10px;
+  background-color: #0b0b9e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-dropdown button:hover {
+  background-color: #0b0b9e;
+}
+
+
+
+.sidebar {
+  top: 60px; 
+  bottom: 0;
+  width: 300px;
+  background-color: #333333;
+  color: #fff;
+  overflow-y: auto;
+  z-index: 100;
+ 
+ 
+}
+
+.sidebar h3{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.sidebar li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar li:hover {
+  background-color: #5a5ab0;
+}
+
+.sidebarIcon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.content {
+  margin-left: 250px; 
+  margin-right: 400px; 
+  padding: 20px;
+  margin-top: 30px;
+  overflow-y: auto; 
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #e3e5f5;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header2 {
+  display: flex;
+  justify-content: center;
+}
+.head {
+  display: flex; 
+  justify-content: center;
+  border-bottom: 2px solid #e3e5f5;
+
+  align-items: center;
+  margin-bottom: 10px;
+}
+.subhead{
+  display: flex;
+  justify-content: space-between; 
+}
+
+.invoice {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  overflow-x: transparent; 
+  height: 780px; 
+}
+
+
+.inheader{
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3e5f5;
+  border-style: none;
+  position: relative;
+  
+}
+
+
+
+.toolDiv{
+
+position: absolute;
+right: -20px;
+display: flex;
+justify-content: center;
+z-index: 999999;
+background-color: grey;
+border-style: none;
+border-radius: 10px;
+visibility: hidden;
+}
+
+.settingButton{
+
+border-radius: 10px;
+padding: 5px;
+border-style: none;
+background-color: #0b0b9e;
+color: white;
+cursor: pointer;
+background-color: #383838;
+
+}
+
+
+
+
+.settingIcon{
+border-style: none;
+color: white;
+border-radius: 10px;
+}
+
+
+
+
+.inheader:hover{
+
+border-style: solid;
+border-width: 2px;
+border-color: #0b0b9e;
+
+}
+
+.inheader:hover .toolDiv{
+
+visibility: visible;
+}
+
+
+
+
+.head {
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  background-color: #e3e5f5;
+}
+.head h2 {
+  border-bottom: 2px solid grey;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3e5f5;
+}
+
+.companyinfo {
+  display: flex;
+  margin-left: 20px;
+ 
+}
+
+.companylogo {
+  margin-right: 70px;
+  display: flex;
+  margin-left:20px ;
+}
+.companydetails {
+  display: grid;
+  padding: 10px;
+  margin-right: 20px;
+}
+.companylogo img {
+  width: 50px;
+  height: 50px;
+}
+.companylogo p {
+  font-weight: bold;
+}
+.billinginfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.billinginfo:hover{
+
+border-style: solid;
+border-width: 2px;
+border-color: #0b0b9e;
+}
+
+
+.billinginfo h3 {
+  color: gray;
+  width: fit-content;
+  align-items: center;
+  border-bottom: 2px solid lightgray;
+  padding: 10px;
+}
+
+.billingdetails {
+  margin-left: 80px;
+  padding: 10px;
+  position: relative;
+}
+
+
+
+.billingdetails:hover .toolDiv{
+
+visibility: visible;
+}
+
+
+.billingaddress {
+  margin-left: 20px;
+  padding: 10px;
+}
+.billingaddress,
+.billingdetails {
+  flex: 1;
+}
+
+.hr {
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+
+.productdetails {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+
+
+.productdetails:hover{
+border-style: solid;
+border-color: #0b0b9e;
+border-width: 2px;
+}
+
+
+.productdetails table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.productdetails th,
+.productdetails td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.productdetails th {
+  background-color: #e3e5f5;
+}
+
+.signature {
+  display: grid;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.sign {
+  height: 50px;
+  width: 100px;
+}
+.signature h2 {
+  margin-left: 10px;
+}
+
+
+.editDeleteIcons {
+  display: grid;
+}
+
+.billingaddress:hover .editDeleteIcons {
+  display: grid;
+}
+
+.productdetails:hover .editDeleteIcons {
+  display: grid;
+}
+
+.editDeleteIcons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.icon {
+  margin: 5px;
+  padding: 5px;
+  background-color: #e3e5f5;
+  border-radius: 50%;
+}
+.billingaddress {
+  position: relative;
+}
+.productdetails {
+  position: relative;
+}
+
+.editDeleteIcons {
+  position: absolute;
+  top: 100px;
+  left: -100px;
+}
+
+.settingHeadlines {
+  display: flex;
+}
+
+.settingBox h3{
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settingHeadlines h2 {
+  
+  cursor: pointer;
+  font-size: 15px;
+  border-left: 1px solid grey;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  
+}
+.settingHeadlines h2:hover {
+  background-color: #5a5ab0;
+}
+.settingBlock.active {
+  display: block;
+}
+
+.settingBlock {
+  display: none;
+ 
+}
+
+.settingBox {
+  background-color: #333333;
+  color: #fff;
+  width: 430px;
+  right: 0;
+  margin-top: 0px; 
+  margin-left: 20px;
+  overflow-y: auto; 
+  z-index: 100; 
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  overflow-x: transparent; 
+  
+ 
+}
+
+.settingBlock h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.settingBox h2 {
+  margin-left: 20px;
+}
+
+.settingItem {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.settingItem label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+ 
+  
+}
+
+.settingItem input[type="text"],
+.settingItem select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+}
+
+
+.settingItem input[type="color"] {
+  width: 50px;
+  height: 30px;
+  padding: 0;
+}
+
+.settingItem span {
+  margin-left: 10px;
+}
+
+.name{
+  display: grid;
+  
+}
+
+
+.settingItem div p {
+  margin: 0;
+ 
+
+}
+
+.settingItem button {
+  background-color: #7373a1;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.settingItem button:hover {
+  background-color: #0b0b7e;
+}
+
+.settingItem input[type="color"] {
+  width: 50px;
+  height: 30px;
+  padding: 0;
+}
+
+.settingItem input[type="file"] {
+  margin-top: 5px;
+}
+
+.settingBlock h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000000;
+  
+  background-color: #e3e5f5;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+ 
+
+}
+
+.settingItem {
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingItem label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.settingItem input[type="text"],
+.settingItem select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+.settingItem span {
+  margin-left: 10px;
+}
+
+.settingItem div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingItem div p {
+  margin: 0;
+}
+
+.settingItem button {
+  background-color: #7373a1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+
+}
+
+.settingItem button:hover {
+  background-color: #9494ad;
+}
+
+
+.icon1{
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  
+}
+
+
+.Maincontent {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  overflow-y: hidden; 
+}
+
+
+::-webkit-scrollbar-button:start {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px; 
+}
+
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .headerLeft,
+  .headerMiddle,
+  .headerRight {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blueStripe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .invoice {
+    max-width: 95%;
+    margin-left: 70px;
+    margin-right: auto;
+
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 63px;
+    position: static;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerColumn {
+    margin-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footerBottom p {
+    margin-left: 0;
+  }
+
+  .footerLanguage,
+  .footerLinks ul {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .settingBox {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+.saveButton{
+
+ width: 200px;
+ height: 50px;
+ border-radius: 10px;
+ border-style: none;
+ background-color: #0b0b9e;
+ cursor: pointer;
+ font-size: 20px;
+ color: white;
+}
+
+
+
+
+.invoiceHeading{
+height: 50px;
+width: 150px;
+font-size: 30px;
+font-weight: bold;
+display: flex;
+justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+  .sidebar {
+    margin-top: 0;
+  }
+}

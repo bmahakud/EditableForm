@@ -1,0 +1,408 @@
+.app {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e3e5f5;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .headerLeft {
+    display: flex;
+    align-items: center;
+  }
+  
+  .headerMiddle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .headerRight {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profileicon {
+    align-items: center;
+    border-left: 2px solid grey;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Blank {
+    width: 20px;
+  }
+  
+  .pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #0b0b9e;
+  }
+  
+  .Collaborators {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border: 1px solid lightgray;
+    background-color: white;
+    padding: 3px 5px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  
+  .help {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding: 3px 5px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  
+  .Collaborators:hover,
+  .help:hover {
+    background-color: lavender;
+  }
+  
+  .headerIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .newCustomerForm {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0b0b9e;
+  }
+  
+  .Text {
+    margin-left: 30px;
+    border-left: 1px solid #0b0b9e;
+    padding: 5px;
+  }
+  
+  .blueStripe {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #0b0b9e;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .invoiceText {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .companyName {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .searchbox {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center; }
+  
+  .searchInput {
+    padding: 10px 5px;
+    width: 58%; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #e3e5f5;
+  }
+  
+  .searchButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .searchIcon {
+    width: 35px;
+    height: 35px;
+    background-color: #c0c0d2;
+    border-radius: 5px;
+  }
+  
+  .dropdownBox {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size:x-large ;
+  }
+  
+  .dropdownItem {
+    padding: 5px 10px;
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #8080c8;
+  }
+  
+  .textBelowBlueStripe {
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .chooseTemplate {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .exploreTemplates {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .sidebar {
+    flex: 0 0 auto;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar > div {
+    margin-bottom: 20px;
+    padding-bottom: 10px; 
+    border-bottom: 1px solid #ccc; 
+  }
+  
+  .sidebar > div:last-child {
+    border-bottom: none; 
+  }
+  
+  .sidebar > div:hover {
+    background-color: #e0e0e0; 
+  }
+  
+  .sidebarHeading {
+    font-weight: bold;
+   align-items: center;
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   
+  }
+  
+  .sidebarContent {
+    padding-top: 10px;
+  }
+  
+  .sidebarContent > div {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebarContent > div:hover {
+    background-color: #f8f8f8; 
+  }
+  
+  .template{
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    width: 270px ;
+    background-color: #e3e5f5;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    margin-right: 80px;
+    border-radius: 5px;
+    
+  }
+
+  .layer{
+    height: 25px;
+    width: 25px;;
+    margin-right: 20px;
+  }
+
+  .arrow {
+    height: 20px;
+    width: 20px;
+   
+  }
+  .templatebox{
+    display: flex;
+    margin-top: 20px;
+  }
+
+
+  .templatepdf{
+    height: auto;
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+
+  }
+
+  .templatepdf1{
+    width: 400px;
+    margin: 20px;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+ 
+  .imgcontainer {
+    position: relative;
+  }
+  
+  .img {
+    width: 300px;
+    height: 400px;
+    transition: transform 0.3s ease;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+  }
+  
+  .img:hover {
+    transform: translateY(50px);
+  }
+  
+  .previewtext {
+    
+    
+    width: 100%;
+    font-size: 22px;
+    align-items: center;
+    color: rgb(25, 42, 169);
+    padding: 10px 20px;left: 100%;
+    border-radius: 5px;
+   
+   
+  
+  }
+  
+  .imgcontainer:hover .previewtext {
+    opacity: 1;
+  }
+  
+  .use {
+    margin-top: 20px;
+    padding: 8px 10px;
+    text-align: center;
+    background-color: #0b0b9e;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+   
+  }
+
+  .use:hover{
+    background-color:  #5a5ab0;
+    
+  }
+  
+
+
+
+  .footer {
+    background-color: #e3e5f5;
+    color: black;
+    padding: 30px 0;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footerColumn {
+    flex: 1;
+    margin-left: 40px;
+  }
+  
+  .footerColumn h4 {
+    font-size: 18px;
+    
+  }
+  
+  .footerColumn ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerColumn ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footerBottom {
+    margin-top: 30px;
+  }
+  
+  .footerBottom p {
+    font-size: 14px;
+    margin-left: 40px;
+  }
+  
+  .footerLanguage {
+    margin-bottom: 10px;
+    margin-left: 40px;
+    font-weight: bold;
+  }
+  
+  .footerLinks ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin-left: 40px;
+  }
+  
+  .footerLinks ul li {
+    margin-right: 10px;
+    margin-left: 40px;
+    font-weight: bold;
+  }
+  
+  
+  
