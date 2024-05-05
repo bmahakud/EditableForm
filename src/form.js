@@ -36,7 +36,7 @@ const Invoice = () => {
     { name: "Product 1", quantity: 1, unitPrice: 10 },
     { name: "Product 2", quantity: 2, unitPrice: 20 },
     { name: "Product 3", quantity: 3, unitPrice: 30 },
-    { name: "Product 4", quantity: 4, unitPrice: 40 },
+    { name: "Product 4", quantity: 4, unitPrice: 60 },
     { name: "Product 5", quantity: 5, unitPrice: 50 },
   ];
 
@@ -79,7 +79,7 @@ const Invoice = () => {
 
   const initialFormData = {
                 heading:'INVOICE',
-                companyname:'Assetive Solutions Ltd.',
+                companyname:'Assertive Solutions Ltd.',
 	        field1:'INV-123',
 	        field2:'CLT-456',
 	        field3:'12/04/2024',
@@ -241,13 +241,13 @@ const Invoice = () => {
               <img src={p15} className={classes.logo} alt="Company Logo" />
               <p>
 	      <input
-                type="text"
-                defaultValue={formData.companyname}
-                onChange={handleChange}
-                placeholder="Type something..."
-	        name="companyname"
-	        style={{fontWeight:"bold"}}
-                />
+                  type="text"
+                  defaultValue={formData.companyname}
+                  onChange={handleChange}
+                  placeholder="Type something..."
+	          name="companyname"
+	          style={{fontWeight:"bold"}}
+                  />
 
 	      </p>
             </div>
@@ -317,21 +317,28 @@ const Invoice = () => {
           <div className={classes.billingaddress}>
             <h3>Billing Address</h3>
             <p>
-              <strong>Company Name:</strong> Awesome Company
+              <strong>Company Name:</strong> 
+            
+               <input defaultValue="Awesome Company"/>
+
+             </p>
+            
+            <p>
+              <strong>Ph. Number</strong> <input defaultValue="+1 37737 277"/>
             </p>
             <p>
-              <strong>Address:</strong> 123 Anywhere St.,{" "}
-            </p>
-            <p> Any City, ST 12345 </p>
-            <p>
-              <strong>Ph. Number</strong> 123-456-7890{" "}
+              <strong>Email:</strong> <input defaultValue="ask@assetive.com"/>
             </p>
             <p>
-              <strong>Email:</strong> hello@reallygreatsite.com{" "}
+              <strong>Website:</strong> <input defaultValue="www.reallygreatsite.com"/>
             </p>
-            <p>
-              <strong>Website:</strong> www.reallygreatsite.com{" "}
+
+             <p>
+              <strong>Address:</strong>  <input defaultValue="123 Anywhere St.,"/>
             </p>
+            <p>  <input defaultValue="Any City, ST 12345"/></p>
+
+
             <div className={classes.editDeleteIcons}>
               <img src={p17} alt="Edit" className={classes.icon} />
               <img src={p16} alt="Delete" className={classes.icon} />
@@ -341,18 +348,18 @@ const Invoice = () => {
           <div className={classes.billingdetails}>
             <h3>Shipping Address</h3>
             <p>
-              <strong>Company Name:</strong> Olivia Wilson
+              <strong>Company Name:</strong>  <input defaultValue="Olivia Wilson"/>
             </p>
             <p>
-              <strong>Account Number:</strong> 0123 4567 8901
+              <strong>Account Number:</strong>  <input defaultValue="+1 672663 21762 26"/>
             </p>
             <p>
-              <strong>Credit Card:</strong> 0123 4567 8901 2345
+              <strong>Credit Card:</strong>  <input defaultValue="xxx xxxx xxxx 7623"/>
             </p>
             <p>
-              <strong>Address:</strong> 123 Anywhere St.,{" "}
+              <strong>Address:</strong>  <input defaultValue="123 Anywhere St.,"/>
             </p>
-            <p> Any City, ST 12345"</p>
+            <p>  <input defaultValue="Any City, ST 12345"/></p>
           </div>
 
            
@@ -402,11 +409,11 @@ const Invoice = () => {
         </div>
 
         <div className={classes.total}>
-          <p>Total: ${totalAmount.toFixed(2)}</p>
-          <p>Shipping Charge: ${shippingCharge.toFixed(2)}</p>
-          <p>GST (18%): ${gstCost}</p>
+          <p>Total:   <input defaultValue={totalAmount.toFixed(2)}/></p>
+          <p>Shipping Charge: <input defaultValue={shippingCharge.toFixed(2)}/></p>
+          <p>GST (18%):  <input defaultValue={gstCost}/></p>
           <p>
-            <strong>Grand Total: ${grandTotal.toFixed(2)}</strong>
+            <strong>Grand Total:  <input defaultValue={grandTotal.toFixed(2)}/></strong>
           </p>
         </div>
 
@@ -458,9 +465,21 @@ const Invoice = () => {
           </div>
 
            <div className={classes.settingItem}>
-            <label htmlFor="fieldLabel">Subheading</label>
-            <input type="text" id="fieldLabel" placeholder="Full Name" defaultValue={formData.companyname} />
+            <label htmlFor="fieldLabel">Subheading1</label>
+            <input type="text" id="fieldLabel" placeholder="Full Name" defaultValue="Invoice Number" />
           </div>
+
+           <div className={classes.settingItem}>
+            <label htmlFor="fieldLabel">Subheading2</label>
+            <input type="text" id="fieldLabel" placeholder="Full Name" defaultValue="Client Number" />
+          </div>
+
+
+	   <div className={classes.settingItem}>
+            <label htmlFor="fieldLabel">Subheading3</label>
+            <input type="text" id="fieldLabel" placeholder="Full Name" defaultValue="Date" />
+          </div>
+
 
 
 

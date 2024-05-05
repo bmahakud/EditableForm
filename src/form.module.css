@@ -375,6 +375,7 @@ visibility: visible;
   border: 1px solid lightgray;
   border-radius: 10px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 
